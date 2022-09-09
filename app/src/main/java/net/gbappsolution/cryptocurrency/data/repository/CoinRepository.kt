@@ -8,12 +8,11 @@ import javax.inject.Inject
 
 class CoinRepository @Inject constructor(
     private val api: CoinPaprikaAPI
-) : ICoinRepository{
+) : ICoinRepository {
     override suspend fun getCoins(): List<CoinDTO> {
-        TODO("Not yet implemented")
+        return api.getCoins()
     }
-
-    override suspend fun getContById(): CoinDetailDTO {
-        TODO("Not yet implemented")
+    override suspend fun getCoinById(coinId: String): CoinDetailDTO {
+        return api.getCoinById(coinId)
     }
 }
