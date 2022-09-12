@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import net.gbappsolution.cryptocurrency.common.Constants
 import net.gbappsolution.cryptocurrency.common.Resource
-import net.gbappsolution.cryptocurrency.domain.use_case.get_coins.GetCoinUseCase
+import net.gbappsolution.cryptocurrency.domain.use_case.get_coin.GetCoinUseCase
 
 
 @HiltViewModel

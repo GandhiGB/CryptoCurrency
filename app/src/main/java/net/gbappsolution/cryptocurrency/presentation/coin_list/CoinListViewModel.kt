@@ -2,7 +2,6 @@ package net.gbappsolution.cryptocurrency.presentation.coin_list
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
-import net.gbappsolution.cryptocurrency.domain.use_case.get_coins.GetCoinUseCase
 import javax.inject.Inject
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
@@ -10,7 +9,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import net.gbappsolution.cryptocurrency.common.Resource
-import net.gbappsolution.cryptocurrency.domain.use_case.get_coin.GetCoinsUseCase
+import net.gbappsolution.cryptocurrency.domain.use_case.get_coins.GetCoinsUseCase
 
 
 @HiltViewModel
